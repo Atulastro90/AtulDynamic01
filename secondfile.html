@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction Form for my Portfolio</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Book an appointment</h1>
+    <div id="for">
+        <form id="pov">
+            <label for="a" style="color:green;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Enter your name :</label><br>
+            <input type="text" id="a" class="same" name="Name" maxlength="10"><br><br>
+            <label for="b" style="color:green;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Enter your E-mail id :</label><br>
+            <input type="email" class="same" id="b" name="mail" maxlength="20"><br><br>
+            <label for="k" style="color:green;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Phone-No :</label><br>
+            <input type="number" class="same" id="b" name="mail" maxlength="12"><br><br>
+            <label for="m" style="color:green;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">   Address :</label><br>
+            <input type="text" id="m" class="same" name="address" maxlength="50"><br><br>
+            <label for="gne" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: green;">Select Timing :</label>
+            <select id="gne" class="same" name="branch" required>
+                <option value="9-10 a.m"> 9-10 a.m</option>
+                <option value="10-11 a.m">10-11 a.m<option>
+                <option value="11-12 p.m">11-12 p.m</option>
+                <option value="12-1 p.m"> 12-1 p.m</option>
+                <option value="3-4 p.m">  3-4 p.m</option>
+                <option value="4-5 p.m">  4-5 p.m</option>
+            </select><br><br>
+            <!-- <label for="c" style="color:green;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> Enter your section:</label><br>
+            <input type="text" class="same" id="c" name="pass" maxlength="8"><br><br>
+            <label for="d" style="color:green;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Tell me about yourself : </label>
+           <textarea id="d" class="same" rows="4" cols="10" placeholder="........"></textarea> -->
+        </form>
+    </div>
+    <button onclick="booked()" id="sub"> Submit</button>
+    <script>
+        function booked(){
+            window.location.href="BOOK.html"
+        }
+    </script>
+</body>
+</html>
